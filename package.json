@@ -13,6 +13,8 @@
     "react-scripts-ts": "2.3.2"
   },
   "devDependencies": {
+    "@types/material-ui": "^0.17.13",
+    "@types/react-tap-event-plugin": "0.0.30",
     "sass-loader": "^6.0.6"
   },
   "scripts": {

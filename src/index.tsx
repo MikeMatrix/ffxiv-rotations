@@ -1,11 +1,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
+import * as injectTapEventPlugin from 'react-tap-event-plugin';
 import registerServiceWorker from './registerServiceWorker';
-import './index.scss';
+import Test from './components/Test';
+//import './index.scss';
+
+injectTapEventPlugin();
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root') as HTMLElement
+  <Test />,
+  document.getElementById('header') as HTMLElement
 );
 registerServiceWorker();

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.scss';
 
-const logo = require('./logo.svg');
+const logo = require('./img/logo.png');
 
 class App extends React.Component<{}, {}> {
   render() {
