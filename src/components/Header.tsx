@@ -1,22 +1,18 @@
 import * as React from 'react';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import {MuiThemeProvider, lightBaseTheme} from "material-ui/styles";
-import * as ComponentTest from './ComponentTest';
+import {MuiThemeProvider, lightBaseTheme} from 'material-ui/styles';
+import HeaderComponent from './HeaderComponent';
 
 import '../_styles/App.scss';
 
-const logo = require('../img/logo.png');
 const lightMuiTheme = getMuiTheme(lightBaseTheme);
 
-
-class Test extends React.Component<any, any> {
+export default class Header extends React.Component<{}, {}> {
     render() {
         return (
             <MuiThemeProvider muiTheme={lightMuiTheme}>
-                <ComponentTest/>
+                <HeaderComponent/>
             </MuiThemeProvider>
         );
     }
 }
-
-export default Test;
