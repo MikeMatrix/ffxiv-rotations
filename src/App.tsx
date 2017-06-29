@@ -1,13 +1,14 @@
 import * as React from 'react';
-import Header from './components/Header';
-// import './App.scss';
+import Header from './components/Header/Header';
 
-class App extends React.Component<{}, {}> {
-  render() {
-    return (
-      <Header/>
-    );
-  }
+import './App.scss';
+
+class App extends React.Component<object, object> {
+    render() {
+        return (
+            <Header/>
+        );
+    }
 }
 
 export default App;
