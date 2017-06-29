@@ -1,28 +1,21 @@
 import * as React from 'react';
 import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
-import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
+import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 
-const logo = require('../res/logo.svg');
-const style = {margin: 15, height: 70};
+import './Header.scss';
 
-export default class HeaderComponent extends React.Component {
+const logo = require('../../res/logo.svg');
 
- /*   constructor(props : number) {
-        super(props);
-        this.state = {
-            value: 3,
-        };
-    }
-    handleChange = (event: string, index: number, value: number) => this.setState({value});
-*/
+export default class Header extends React.Component<object, object> {
     render() {
         return (
             <Toolbar>
-                <ToolbarGroup firstChild={true}>
-                    <img src={logo} style={style}/>
-                </ToolbarGroup>
                 <ToolbarGroup>
+                    <img className="logo" src={logo}/>
+                    <ToolbarTitle text="PivotXIV" />
+                </ToolbarGroup>
+                <ToolbarGroup lastChild={true}>
                     <IconButton tooltip="Share">
                         <FontIcon className="material-icons">share</FontIcon>
                     </IconButton>
